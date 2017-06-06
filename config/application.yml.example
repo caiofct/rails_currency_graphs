@@ -1,0 +1,5 @@
+secret_key_base: 8973b56243e1f747596dfb825d7c1e36fb9dd782692c77ebff122c6cfe04c3cbc39c4bc675484780f1559cffc431cc28b5e4c7ec18d2a4d063a788f594ed7206
+# Mail settings
+mail_address: smtp.gmail.com
+mail_user_name: username
+mail_password: password

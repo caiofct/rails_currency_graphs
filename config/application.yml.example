@@ -3,3 +3,5 @@ secret_key_base: 8973b56243e1f747596dfb825d7c1e36fb9dd782692c77ebff122c6cfe04c3c
 mail_address: smtp.gmail.com
 mail_user_name: username
 mail_password: password
+quandl_api_key: 'api_key'
+quandl_api_version: '2015-04-09'

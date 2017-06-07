@@ -8,7 +8,7 @@ class GraphicsController < ApplicationController
 
   def chart
     # Types of charts
-    chart_types = [Currency::BITCOIN, Currency::ETHERIUM, Currency::NASDAQ]
+    chart_types = [Currency::BITCOIN, Currency::ETHEREUM, Currency::NASDAQ]
     # Series to display in the chart
     @series = []
     # Amount of points of data to get and generate in the chart

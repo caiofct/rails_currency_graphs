@@ -1,24 +1,36 @@
-# README
+# Rails Currency Graphs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Displays a chart, using chartkick + highcharts, for three different currencies:
 
-Things you may want to cover:
+* Bitcoin
+* Ethereum
+* Nasdaq Composite Index
 
-* Ruby version
+We use some apis to each type of currency:
 
-* System dependencies
+* Bitcoin
 
-* Configuration
+Using quandl.com api using quandl gem to consume it
 
-* Database creation
+* Ethereum
 
-* Database initialization
+Using cryptocompare.com api and httparty gem to consume it
 
-* How to run the test suite
+* Nasdaq
 
-* Services (job queues, cache servers, search engines, etc.)
+Using quandl.com api using quandl gem to consume it
 
-* Deployment instructions
+# Usage
 
-* ...
+To run the project
+
+```sh
+$ bundle install
+$ rails s
+```
+
+To run the tests
+
+```sh
+$ rake spec
+```

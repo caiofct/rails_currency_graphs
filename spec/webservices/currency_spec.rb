@@ -17,7 +17,7 @@ RSpec.describe Currency do
   end
 
   it "returns some data for each chart type" do
-    chart_types = [Currency::BITCOIN, Currency::ETHERIUM, Currency::NASDAQ]
+    chart_types = [Currency::BITCOIN, Currency::ETHEREUM, Currency::NASDAQ]
     # Amount of points of data to get and generate in the chart
     data_amount = 1
     # The final data to get the data from (Using 2 months before the current month because the nasdaq api only has data from this period)

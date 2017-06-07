@@ -1,4 +1,4 @@
-class Etherium < Currency
+class Ethereum < Currency
   def get_data
     result = []
     @data_amount.times.each do |index|

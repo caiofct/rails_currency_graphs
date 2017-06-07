@@ -1,6 +1,6 @@
 class Currency
   BITCOIN = 'bitcoin'
-  ETHERIUM = 'etherium'
+  ETHEREUM = 'ethereum'
   NASDAQ = 'nasdaq'
 
   # The initial date to search the data from the webservice
@@ -26,8 +26,8 @@ class Currency
     case currency_type
     when Currency::BITCOIN
       return Bitcoin.new(end_date, data_amount).get_data
-    when Currency::ETHERIUM
-      return Etherium.new(end_date, data_amount).get_data
+    when Currency::ETHEREUM
+      return Ethereum.new(end_date, data_amount).get_data
     when Currency::NASDAQ
       return Nasdaq.new(end_date, data_amount).get_data
     end

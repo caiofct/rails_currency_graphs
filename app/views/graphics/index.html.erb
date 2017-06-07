@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  jQuery(document).on("page:load turbolinks:load", function() {
+    loadUrlViaAjax("<%=graphics_chart_path%>")
+  });
+</script>
+
+<h4>
+  <b>Welcome to the Rails Currency Graphs App</b>
+</h4>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div id="currency-charts" style="margin-top: 50px;">
+      <%= image_tag "throbber.gif" %>
+    </div>
+  </div>
+</div>

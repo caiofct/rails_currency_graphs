@@ -19,11 +19,12 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Jquery js lib
+gem 'jquery-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
+gem 'therubyracer', platforms: :ruby
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -40,13 +41,33 @@ gem 'figaro'
 gem 'gon'
 # State machine for ruby enums
 gem 'stateful_enum'
+# Utilities for charts
+gem 'chartkick'
+# Used to get the stock prices over time
+gem 'quandl'
+# Used to make http requests and parse the response
+gem 'httparty'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
+  gem 'pry-byebug'
+  gem 'faker'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'enumerize-matchers'
+end
+
+group :test do
+  gem 'poltergeist'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'timecop'
+  gem 'email_spec'
+  gem 'rspec-activemodel-mocks'
+  gem 'shoulda-matchers'
+  gem 'shoulda-callback-matchers'
 end
 
 group :development do
